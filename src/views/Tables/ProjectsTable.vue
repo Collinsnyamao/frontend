@@ -117,7 +117,7 @@
     },
     data() {
       return {
-        tableData: [
+        /*tableData: [
           {
             img: 'img/theme/bootstrap.jpg',
             title: 'Argon Design System',
@@ -158,7 +158,7 @@
             statusType: 'success',
             completion: 100
           }
-        ]
+        ]*/
       }
     }
   }

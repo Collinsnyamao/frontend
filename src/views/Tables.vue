@@ -4,16 +4,11 @@
             <!-- Card stats -->
             <div class="row">
                 <div class="col-xl-3 col-lg-6">
-                    <stats-card title="Total traffic"
+                    <stats-card title="Accounts"
                                 type="gradient-red"
-                                sub-title="350,897"
+                                v-bind:sub-title="myJson.accounts_count"
                                 icon="ni ni-active-40"
                                 class="mb-4 mb-xl-0">
-
-                        <template slot="footer">
-                            <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                            <span class="text-nowrap">Since last month</span>
-                        </template>
                     </stats-card>
                 </div>
                 <div class="col-xl-3 col-lg-6">
@@ -23,10 +18,6 @@
                                 icon="ni ni-chart-pie-35"
                                 class="mb-4 mb-xl-0">
 
-                        <template slot="footer">
-                            <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 12.18%</span>
-                            <span class="text-nowrap">Since last month</span>
-                        </template>
                     </stats-card>
                 </div>
                 <div class="col-xl-3 col-lg-6">
@@ -36,10 +27,6 @@
                                 icon="ni ni-money-coins"
                                 class="mb-4 mb-xl-0">
 
-                        <template slot="footer">
-                            <span class="text-danger mr-2"><i class="fa fa-arrow-down"></i> 5.72%</span>
-                            <span class="text-nowrap">Since last month</span>
-                        </template>
                     </stats-card>
 
                 </div>
@@ -50,10 +37,6 @@
                                 icon="ni ni-chart-bar-32"
                                 class="mb-4 mb-xl-0">
 
-                        <template slot="footer">
-                            <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 54.8%</span>
-                            <span class="text-nowrap">Since last month</span>
-                        </template>
                     </stats-card>
                 </div>
             </div>
@@ -76,11 +59,20 @@
 </template>
 <script>
   import ProjectsTable from './Tables/ProjectsTable'
+  import json from '../../json/transactions'
+
   export default {
     name: 'tables',
     components: {
       ProjectsTable
-    }
+    },
+      data() {
+          return {
+              myJson: json,
+              myJsonCredits: json.transaction_details,
+              myJsonDebits: json
+          }
+      }
   };
 </script>
 <style></style>
