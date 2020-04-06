@@ -1,0 +1,26 @@
+{
+  "accounts_count": 2,
+  "transaction_details": [{
+    "credits": [{
+      "date": "Tue Mar 03 15:59:00 EAT 2020",
+      "amount": "760000"
+    }],
+    "debits": [{
+      "date": "Wed Mar 04 16:00:00 EAT 2020",
+      "amount": "56000"
+    }],
+    "accNo": "A4536225256363"
+  },
+    {
+      "credits": [{
+        "date": "Fri Mar 06 15:59:00 EAT 2020",
+        "amount": "360000"
+      }],
+      "debits": [{
+        "date": "Wed Mar 11 16:00:00 EAT 2020",
+        "amount": "12000"
+      }],
+      "accNo": "B536225566363"
+    }
+  ]
+}

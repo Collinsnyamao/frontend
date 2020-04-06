@@ -1,0 +1,28 @@
+{
+  "accounts_count": "2",
+  "accounts_details": [{
+    "activityDatesDetails": {
+      "lastCreditDate": "Tue Mar 03 15:59:00 EAT 2020",
+      "lastDebitDate": "Wed Mar 04 16:00:00 EAT 2020"
+    },
+    "bankBalance": 704001,
+    "accNo": "A4536225256363",
+    "bankName": "Equity Bank",
+    "openDate": "Wed Mar 04 15:54:00 EAT 2020",
+    "creditFrequency": 1,
+    "debitFrequency": 1
+  },
+    {
+      "activityDatesDetails": {
+        "lastCreditDate": "Tue Mar 03 15:59:00 EAT 2020",
+        "lastDebitDate": "Wed Mar 04 16:00:00 EAT 2020"
+      },
+      "bankBalance": 436789,
+      "accNo": "B536225566363",
+      "bankName": "Co-op Bank",
+      "openDate": "Thur Apr 04 15:54:00 EAT 2020",
+      "creditFrequency": 4,
+      "debitFrequency": 3
+    }
+  ]
+}
